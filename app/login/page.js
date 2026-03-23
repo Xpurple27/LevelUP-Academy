@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { supabase } from '../../lib/supabaseClient'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -29,7 +30,7 @@ export default function Login() {
 
         {/* LOGO */}
         <div className="flex justify-center mb-4">
-          <img src="/logolevelup.jpeg" className="w-12 h-12" />
+          <Image src="/logolevelup.jpeg" alt="Level Up Academy Logo" width={48} height={48} className="mx-auto mb-4"/>
         </div>
 
         {/* TITLE */}
